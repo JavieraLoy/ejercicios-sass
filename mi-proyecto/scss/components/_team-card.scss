@@ -1,0 +1,49 @@
+@use "../abstracts/variables" as v;
+
+@use "../abstracts/mixins" as m;
+
+/*Bloque: .team-card*/
+.team-card {
+    @include m.card-base;
+}
+
+/*elementos*/
+.team-card__header {
+    margin-bottom: 8px;
+}
+
+.team-card__role {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.team-card__name {
+    margin: 0;
+}
+
+.team-card__body {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.team-card__btn {
+    margin-top: 15px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1rem;
+    cursor: pointer;
+}
+    
+
+
+/*modificadores*/
+
+.team-card--design {
+    @include m.apply-theme(v.$design-color);
+}
+.team-card--code {
+    @include m.apply-theme (v.$code-color);
+}
+.team-card--marketing {
+    @include m.apply-theme (v.$marketing-color);
+}

@@ -1,0 +1,22 @@
+@mixin card-base {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+@mixin apply-theme($color-recibido) {
+    
+    & {
+        border-top: 8px solid $color-recibido;
+    }
+
+    .role-text {
+        color: $color-recibido;
+    }
+
+    .contact-btn {
+        background-color: $color-recibido;
+        color:#ffffff;
+    }
+}

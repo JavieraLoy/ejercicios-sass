@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as v;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: v.$font-principal, sans-serif;
+    background-color: v.$page-color;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px;
+}
+.main-title {
+    color: #1d1c1c;
+    text-align: center;  
+}

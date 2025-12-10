@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/*fuente principal*/
+/*color pagina*/
+/*color rol diseño*/
+/*color rol codigo*/
+/*color rol marketing*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif, sans-serif;
+  background-color: #e6e8e9;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px;
+}
+
+.main-title {
+  color: #1d1c1c;
+  text-align: center;
+}
+
+/*Bloque: .team-card*/
+.team-card {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*elementos*/
+.team-card__header {
+  margin-bottom: 8px;
+}
+
+.team-card__role {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.team-card__name {
+  margin: 0;
+}
+
+.team-card__body {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.team-card__btn {
+  margin-top: 15px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1rem;
+  cursor: pointer;
+}
+
+/*modificadores*/
+.team-card--design {
+  border-top: 8px solid #ee1379;
+}
+.team-card--design .role-text {
+  color: #ee1379;
+}
+.team-card--design .contact-btn {
+  background-color: #ee1379;
+  color: #ffffff;
+}
+
+.team-card--code {
+  border-top: 8px solid #071092;
+}
+.team-card--code .role-text {
+  color: #071092;
+}
+.team-card--code .contact-btn {
+  background-color: #071092;
+  color: #ffffff;
+}
+
+.team-card--marketing {
+  border-top: 8px solid #ee6307;
+}
+.team-card--marketing .role-text {
+  color: #ee6307;
+}
+.team-card--marketing .contact-btn {
+  background-color: #ee6307;
+  color: #ffffff;
+}/*# sourceMappingURL=main.css.map */
